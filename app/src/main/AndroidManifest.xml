@@ -24,6 +24,10 @@
             android:name=".frontend.Home"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".frontend.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
