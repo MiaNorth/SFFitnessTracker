@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/sf.hackday.sffitnesstracker.frontend"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="150dp"></LinearLayout>
+</FrameLayout>

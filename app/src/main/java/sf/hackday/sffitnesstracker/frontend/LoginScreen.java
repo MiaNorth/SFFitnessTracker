@@ -12,11 +12,10 @@ import android.view.View;
 
 import sf.hackday.sffitnesstracker.R;
 
-
 /**
  * TODO: document your custom view class.
  */
-public class GUI1 extends View {
+public class LoginScreen extends View {
     private String mExampleString; // TODO: use a default from R.string...
     private int mExampleColor = Color.RED; // TODO: use a default from R.color...
     private float mExampleDimension = 0; // TODO: use a default from R.dimen...
@@ -26,17 +25,17 @@ public class GUI1 extends View {
     private float mTextWidth;
     private float mTextHeight;
 
-    public GUI1(Context context) {
+    public LoginScreen(Context context) {
         super(context);
         init(null, 0);
     }
 
-    public GUI1(Context context, AttributeSet attrs) {
+    public LoginScreen(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);
     }
 
-    public GUI1(Context context, AttributeSet attrs, int defStyle) {
+    public LoginScreen(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
@@ -44,22 +43,22 @@ public class GUI1 extends View {
     private void init(AttributeSet attrs, int defStyle) {
         // Load attributes
         final TypedArray a = getContext().obtainStyledAttributes(
-                attrs, R.styleable.GUI1, defStyle, 0);
+                attrs, R.styleable.LoginScreen, defStyle, 0);
 
         mExampleString = a.getString(
-                R.styleable.GUI1_exampleString);
+                R.styleable.LoginScreen_exampleString);
         mExampleColor = a.getColor(
-                R.styleable.GUI1_exampleColor,
+                R.styleable.LoginScreen_exampleColor,
                 mExampleColor);
         // Use getDimensionPixelSize or getDimensionPixelOffset when dealing with
         // values that should fall on pixel boundaries.
         mExampleDimension = a.getDimension(
-                R.styleable.GUI1_exampleDimension,
+                R.styleable.LoginScreen_exampleDimension,
                 mExampleDimension);
 
-        if (a.hasValue(R.styleable.GUI1_exampleDrawable)) {
+        if (a.hasValue(R.styleable.LoginScreen_exampleDrawable)) {
             mExampleDrawable = a.getDrawable(
-                    R.styleable.GUI1_exampleDrawable);
+                    R.styleable.LoginScreen_exampleDrawable);
             mExampleDrawable.setCallback(this);
         }
 
