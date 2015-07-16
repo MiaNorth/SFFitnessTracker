@@ -1,13 +1,9 @@
 package sf.hackday.sffitnesstracker.frontend;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import sf.hackday.sffitnesstracker.R;
 
@@ -18,14 +14,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button btnSendButton = (Button) findViewById(R.id.btnLogin);
-
-        btnSendButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Home.class));
-            }
-        });
     }
 
     @Override

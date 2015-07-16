@@ -3,43 +3,38 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/white">
 
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res/sf.hackday.sffitnesstracker"
-        android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/linearLayout">
 
-        <sf.hackday.sffitnesstracker.frontend.GUI1
-            android:background="#ccc" android:layout_width="match_parent"
-            android:layout_height="match_parent" android:paddingLeft="20dp" android:paddingBottom="40dp"
-            app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:exampleString="Hello, GUI1"
-            app:exampleDrawable="@android:drawable/ic_menu_add"
-            android:id="@+id/sffitnesstracker" />
-
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left|top"
-            android:background="@color/red">
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@mipmap/logo" />
+    </LinearLayout>
 
-            <EditText
-                android:id="@+id/edit_message"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/edit_message"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/button_send"
-                android:id="@+id/btnLogin" />
-        </LinearLayout>
-
-
-
-    </FrameLayout>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:typeface="normal"
+        android:enabled="true"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/white"
+        android:background="@mipmap/roundbutton"
+        />
 
 </RelativeLayout>

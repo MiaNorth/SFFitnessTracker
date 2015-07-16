@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="left|top"
-        android:background="@color/red">
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/edit_message"
