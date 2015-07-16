@@ -1,9 +1,11 @@
-<resources>>
+<resources>
     <string name="app_name">SFFitnessTracker</string>
     <string name="edit_message">STATE FARM</string>
     <string name="button_send">Login</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <color name="white">#ffffff</color>
-    <color name="black">#ff010101</color>
+    <color name="red">#ffff0000</color>
+    <string name="title_activity_settings">settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_login">Login</string>
 </resources>
