@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SFFitnessTracker</string>
-
+    <string name="edit_message">STATE FARM</string>
+    <string name="button_send">Login</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <color name="red">#ffff0000</color>
 </resources>
