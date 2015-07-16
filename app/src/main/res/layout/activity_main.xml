@@ -6,4 +6,39 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
 
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/sf.hackday.sffitnesstracker"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <sf.hackday.sffitnesstracker.frontend.GUI1
+            android:background="#ccc" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="20dp" android:paddingBottom="40dp"
+            app:exampleDimension="24sp" app:exampleColor="#33b5e5" app:exampleString="Hello, GUI1"
+            app:exampleDrawable="@android:drawable/ic_menu_add"
+            android:id="@+id/sffitnesstracker" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:background="@color/red">
+
+            <EditText
+                android:id="@+id/edit_message"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_message"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_send"/>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
 </RelativeLayout>
